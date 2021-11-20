@@ -13,5 +13,6 @@ final featuresProvider =
 class FeaturesNotifier extends StateNotifier<List<FeatureEnum>> {
   FeaturesNotifier() : super([]);
   void addFeature(FeatureEnum feature) => state = [...state, feature];
-  void removeFeature(FeatureEnum feature) => state = [...state..remove(feature)];
+  void removeFeature(FeatureEnum feature) =>
+      state = [...state..remove(feature)];
 }

@@ -6,7 +6,8 @@ class FeatureSwitcher extends ConsumerWidget {
   final FeatureEnum feature;
   final Widget child;
 
-  const FeatureSwitcher({required this.feature, required this.child, Key? key}) : super(key: key);
+  const FeatureSwitcher({required this.feature, required this.child, Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

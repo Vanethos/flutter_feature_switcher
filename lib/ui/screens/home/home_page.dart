@@ -5,11 +5,11 @@ import 'package:feature_switcher/ui/widgets/feature_switcher.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class HomePage extends ConsumerWidget {
+class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Center(
@@ -27,7 +27,10 @@ class HomePage extends ConsumerWidget {
               ),
               FeatureSwitcher(
                 feature: FeatureEnum.premium,
-                child: Text("💰", style: TextStyle(fontSize: 24.0),),
+                child: Text(
+                  "💰",
+                  style: TextStyle(fontSize: 24.0),
+                ),
               ),
               SizedBox(
                 height: 20.0,
@@ -39,7 +42,10 @@ class HomePage extends ConsumerWidget {
               ),
               FeatureSwitcher(
                 feature: FeatureEnum.diamond,
-                child: Text("💎", style: TextStyle(fontSize: 24.0),),
+                child: Text(
+                  "💎",
+                  style: TextStyle(fontSize: 24.0),
+                ),
               ),
             ],
           ),
